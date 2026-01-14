@@ -1,41 +1,68 @@
-gsap.registerPlugin(ScrollTrigger);
+/* ===============================
+   DARK / LIGHT MODE TOGGLE
+================================ */
 
-/* ===== HERO ANIMATIONS ===== */
-gsap.from(".hero-text", {
-  y: 50,
+const toggleBtn = document.getElementById("themeToggle");
+const body = document.body;
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  body.classList.add("light");
+  toggleBtn.textContent = "🌙";
+} else {
+  toggleBtn.textContent = "🌞";
+}
+
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("light");
+
+  if (body.classList.contains("light")) {
+    toggleBtn.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  } else {
+    toggleBtn.textContent = "🌞";
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+
+/* ===============================
+   GSAP ANIMATIONS
+================================ */
+
+gsap.from(".hero-text h1", {
   opacity: 0,
+  y: 40,
   duration: 1,
+  ease: "power3.out"
+});
+
+gsap.from(".hero-text h2, .hero-text p, .hero-buttons", {
+  opacity: 0,
+  y: 30,
+  duration: 1,
+  delay: 0.3,
+  stagger: 0.15,
   ease: "power3.out"
 });
 
 gsap.from(".hero-image", {
-  scale: 0.8,
   opacity: 0,
+  scale: 0.9,
   duration: 1,
-  delay: 0.3,
+  delay: 0.6,
   ease: "power3.out"
 });
 
-/* ===== CARD SCROLL ANIMATIONS ===== */
-gsap.utils.toArray(".card").forEach(card => {
-  gsap.from(card, {
-    scrollTrigger: {
-      trigger: card,
-      start: "top 85%",
-    },
-    y: 40,
+gsap.utils.toArray(".section").forEach(section => {
+  gsap.from(section, {
     opacity: 0,
-    duration: 0.8,
-    ease: "power3.out"
+    y: 60,
+    duration: 1,
+    scrollTrigger: {
+      trigger: section,
+      start: "top 80%",
+    }
   });
-});
-
-/* ===== THEME TOGGLE ===== */
-const toggleBtn = document.getElementById("themeToggle");
-
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("light");
-
-  toggleBtn.textContent = 
-    document.body.classList.contains("light") ? "🌞" : "🌙";
 });
