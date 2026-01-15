@@ -1,6 +1,8 @@
 /* ===============================
-   WAIT FOR DOM
+   PORTFOLIO SCRIPT
+   Dark / Light Mode + GSAP
 ================================ */
+
 document.addEventListener("DOMContentLoaded", () => {
 
   /* ===============================
@@ -11,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const body = document.body;
 
   if (!toggleBtn) {
-    console.error("Theme toggle button not found");
+    console.error("❌ themeToggle button not found");
     return;
   }
 
@@ -39,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ===============================
-     GSAP SETUP
+     GSAP ANIMATIONS
   ================================ */
 
   gsap.registerPlugin(ScrollTrigger);
