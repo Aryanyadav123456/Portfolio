@@ -6,58 +6,61 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="AI/ML Engineer building production-ready Generative AI, RAG systems, and scalable ML pipelines." />
-  <meta name="keywords" content="AI Engineer, Machine Learning, Generative AI, RAG, LLMs" />
 
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- GSAP -->
   <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
   <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
 <header class="navbar">
-  <div class="logo">Aryan<span>.</span></div>
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#certifications">Certificates</a>
-    <a href="#blogs">Blogs</a>
-    <a href="#contact">Contact</a>
-    <button id="themeToggle">🌙</button>
-  </nav>
+  <div class="nav-inner">
+    <div class="logo">Aryan<span>.</span></div>
+    <nav class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certificates</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle">🌞</button>
+    </nav>
+  </div>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-text">
-    <h1>AI / ML Engineer</h1>
-    <h2>Building Production-Ready AI Systems</h2>
-    <p>
-      Transforming Generative AI, RAG & ML pipelines into scalable business solutions with real-world impact.
-    </p>
+  <div class="hero-container">
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="#contact" class="btn outline">Contact Me</a>
+    <div class="hero-text">
+      <h1 class="hero-name">Aryan <span>Devaragari</span></h1>
+      <h2>AI / ML Engineer</h2>
+
+      <p>
+        Building production-ready <strong>Generative AI, RAG systems</strong> and
+        scalable ML pipelines that deliver real business impact.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+      </div>
     </div>
-  </div>
 
-  <div class="hero-image">
-    <div class="glow"></div>
-    <img src="Photo.jpg" alt="Aryan Devaragari">
-  </div>
-</section>
+    <div class="hero-image">
+      <img src="./Photo.jpg" alt="Aryan Devaragari">
+    </div>
 
-<!-- SUMMARY -->
-<section class="section">
-  <h3>Professional Summary</h3>
-  <p>
-    Results-driven AI/ML Engineer with 2+ years of experience delivering Generative AI, RAG systems,
-    reinforcement learning models, and scalable ML pipelines in production environments.
-  </p>
+  </div>
 </section>
 
 <!-- PROJECTS -->
@@ -66,68 +69,50 @@
 
   <div class="projects-grid">
 
-    <!-- Project 1 -->
     <div class="project-card">
       <div class="project-image">
-        <img src="project-agentic-ai.jpg" alt="Agentic AI system diagram">
+        <img src="./project-agentic-ai.jpg">
       </div>
       <div class="project-content">
         <span class="project-tag">Agentic AI</span>
         <h3>Company Profile Extractor</h3>
         <p>
-          Built a multi-agent AI system to automate B2B company research using
-          <strong>Gemini, LangChain, web tools, and structured extraction pipelines</strong>.
-          The system orchestrates agents for search, validation, summarization,
-          and formatting.
+          Multi-agent AI system automating B2B research using Gemini + LangChain.
         </p>
-        <div class="project-impact">
-          ⏱ <strong>50%</strong> reduction in research time
-        </div>
+        <div class="project-impact">⏱ 50% reduction in research time</div>
       </div>
     </div>
 
-    <!-- Project 2 -->
     <div class="project-card">
       <div class="project-image">
-        <img src="project-finance-ai.jpg" alt="AI-powered financial dashboard">
+        <img src="./project-finance-ai.jpg">
       </div>
       <div class="project-content">
-        <span class="project-tag">RAG + LLMs</span>
+        <span class="project-tag">RAG Systems</span>
         <h3>AI-Powered Financial Assistant</h3>
         <p>
-          Designed a retrieval-augmented AI assistant delivering real-time
-          financial insights. Integrated
-          <strong>vector databases, APIs, and LLM reasoning</strong>
-          for accurate, context-aware responses.
+          Real-time financial insights using vector search, APIs and LLM reasoning.
         </p>
-        <div class="project-impact">
-          📈 Faster responses & higher prediction accuracy
-        </div>
+        <div class="project-impact">📈 Faster & more accurate responses</div>
       </div>
     </div>
 
-    <!-- Project 3 -->
     <div class="project-card">
       <div class="project-image">
-        <img src="project-vision-ai.jpg.jpg" alt="Computer vision vehicle inspection">
+        <img src="./project-vision-ai.jpg">
       </div>
       <div class="project-content">
         <span class="project-tag">Computer Vision</span>
         <h3>License Plate & Dent Detection</h3>
         <p>
-          Developed a real-time vehicle inspection system using
-          <strong>YOLO, OpenCV, and deep learning pipelines</strong>
-          to detect license plates and surface-level dents automatically.
+          YOLO + OpenCV system for automated vehicle inspection workflows.
         </p>
-        <div class="project-impact">
-          🚗 Automated defect detection for insurance workflows
-        </div>
+        <div class="project-impact">🚗 Automated defect detection</div>
       </div>
     </div>
 
   </div>
 </section>
->
 
 <!-- EXPERIENCE -->
 <section id="experience" class="section">
@@ -135,174 +120,100 @@
 
   <div class="experience-timeline">
 
-    <!-- Tech-Intelleon -->
     <div class="exp-card">
       <div class="exp-dot"></div>
       <div class="exp-content">
-        <h3>AI/ML Engineer <span>— Tech-Intelleon Digital Solutions</span></h3>
+        <h3>AI/ML Engineer — Tech-Intelleon</h3>
         <p class="exp-date">Jan 2025 – Oct 2025</p>
         <p>
-          Owned and delivered production-grade AI systems focused on
-          <strong>Generative AI, RAG pipelines, and LLM workflows</strong>.
-          Built scalable architectures that reduced response latency,
-          improved automation accuracy, and supported real business use-cases.
+          Built and deployed production RAG pipelines and LLM workflows.
         </p>
       </div>
     </div>
 
-    <!-- VOZIQ -->
     <div class="exp-card">
       <div class="exp-dot"></div>
       <div class="exp-content">
-        <h3>Data Scientist Intern <span>— VOZIQ.AI</span></h3>
+        <h3>Data Scientist Intern — VOZIQ.AI</h3>
         <p class="exp-date">Jul 2024 – Dec 2024</p>
         <p>
-          Developed churn and NPS prediction models with strong emphasis on
-          <strong>feature engineering, model evaluation, and business alignment</strong>.
-          Delivered BI dashboards that enabled leadership to make faster,
-          data-driven decisions.
+          Churn & NPS prediction, feature engineering, BI dashboards.
         </p>
       </div>
     </div>
 
-    <!-- Innomatics -->
     <div class="exp-card">
       <div class="exp-dot"></div>
       <div class="exp-content">
-        <h3>AI/ML Intern <span>— Innomatics Research Labs</span></h3>
+        <h3>AI/ML Intern — Innomatics Research Labs</h3>
         <p class="exp-date">Jan 2024 – Jun 2024</p>
         <p>
-          Built a <strong>RAG-based Search Engine</strong> for semantic document retrieval
-          and an <strong>AI Code Reviewer</strong> using LLMs.
-          Worked across the full ML lifecycle — preprocessing, training,
-          evaluation, and deployment — strengthening hands-on expertise in
-          Python, SQL, and Generative AI systems.
+          Built RAG search engine & AI code reviewer using LLMs.
         </p>
       </div>
     </div>
 
   </div>
 </section>
-
 
 <!-- CERTIFICATIONS -->
 <section id="certifications" class="section alt">
   <h2>Certifications</h2>
 
-  <div class="grid three cert-grid">
-
-    <div class="cert-card">
-      <div class="cert-icon">🏆</div>
-      <h3>IBM Machine Learning</h3>
-      <p>End-to-end machine learning foundations with real-world use cases.</p>
-      <a href="assets/certificate_1.pdf" target="_blank" class="cert-btn">
-        👀 View Certificate
-      </a>
-    </div>
-
-    <div class="cert-card">
-      <div class="cert-icon">🎓</div>
-      <h3>AI Engineer for Data Scientists</h3>
-      <p>Production-grade AI systems, deployment, and model lifecycle.</p>
-      <a href="assets/certificate_2.pdf" target="_blank" class="cert-btn">
-        👀 View Certificate
-      </a>
-    </div>
-
+  <div class="grid two">
+    <embed src="./cert-ibm-ml.pdf">
+    <embed src="./cert-ai-engineer.pdf">
   </div>
 </section>
-
 
 <!-- BLOGS -->
 <section id="blogs" class="section">
-  <h2>Writing & Insights</h2>
+  <h2>Blogs</h2>
 
-  <div class="grid three blog-grid">
-
-    <article class="blog-card">
-      <span class="blog-date">Jan 2025</span>
+  <div class="grid three">
+    <div class="card">
       <h3>Building RAG Systems for Production</h3>
-      <p>
-        Design patterns, vector databases, retrieval strategies,
-        and deployment considerations for real-world RAG pipelines.
-      </p>
-      <a href="https://medium.com/@devaragariaryanyadav/generative-ai-8d79d90db58e" target="_blank">
-        Read Article →
-      </a>
-    </article>
+      <p>Design patterns & deployment strategies.</p>
+      <a href="#">Read →</a>
+    </div>
 
-    <article class="blog-card">
-      <span class="blog-date">Dec 2024</span>
-      <h3>Distance Metrics in Machine Learning</h3>
-      <p>
-        A practical guide to similarity measures and when to use
-        Euclidean, Cosine, Manhattan, and others.
-      </p>
-      <a href="https://medium.com/@devaragariaryanyadav/distance-metrics-3059831ea76a" target="_blank">
-        Read Article →
-      </a>
-    </article>
-
+    <div class="card">
+      <h3>Distance Metrics in ML</h3>
+      <p>Similarity measures explained simply.</p>
+      <a href="#">Read →</a>
+    </div>
   </div>
 </section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="contact-card">
 
-    <h2 class="contact-title">
-      Let’s Build Something <span>Amazing</span>
-    </h2>
-
-    <p class="contact-subtitle">
-      Interested in collaborating, hiring, or building impactful AI systems?
-      Let’s talk.
-    </p>
+    <h2 class="contact-title">Let’s Build Something <span>Amazing</span></h2>
 
     <div class="contact-actions">
-
-      <a href="mailto:devaragariaryanyadav@gmail.com?subject=AI/ML%20Opportunity"
-         class="contact-btn email">
-        <img src="assets/icons/mail.svg" alt="Email"/>
-        <span>Email</span>
+      <a href="mailto:devaragariaryanyadav@gmail.com" class="contact-btn">
+        <i class="fa-solid fa-envelope"></i> Email
       </a>
 
-      <a href="https://github.com/Aryanyadav123456"
-         target="_blank"
-         class="contact-btn github">
-        <img src="assets/icons/github.svg" alt="GitHub"/>
-        <span>GitHub</span>
+      <a href="https://github.com/Aryanyadav123456" class="contact-btn">
+        <i class="fa-brands fa-github"></i> GitHub
       </a>
 
-      <a href="https://www.linkedin.com/in/aryandevaragari567894"
-         target="_blank"
-         class="contact-btn linkedin">
-        <img src="assets/icons/linkedin.svg" alt="LinkedIn"/>
-        <span>LinkedIn</span>
+      <a href="https://www.linkedin.com/in/aryandevaragari567894" class="contact-btn">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
       </a>
 
-      <a href="assets/Aryan_Devaragari_Resume.pdf"
-         class="contact-btn resume"
-         download>
-        <img src="https://docs.google.com/document/d/1wCeGi5vF_gtw_cFHDM-0iTt3gayYp_ts/edit?usp=drive_link&ouid=109457444312154001065&rtpof=true&sd=true" alt="Resume"/>
-        <span>Download Resume</span>
+      <a href="./Aryan_Devaragari_Resume.pdf" download class="contact-btn">
+        <i class="fa-solid fa-file-arrow-down"></i> Resume
       </a>
-
     </div>
+
   </div>
 </section>
 
-<footer>
-  © 2025 Aryan Devaragari — AI/ML Engineer
-</footer>
+<footer>© 2025 Aryan Devaragari</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
