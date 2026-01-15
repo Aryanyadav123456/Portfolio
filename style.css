@@ -460,4 +460,90 @@ footer {
 .blog-card a:hover {
   text-decoration: underline;
 }
+/* ===============================
+   EXPERIENCE – PREMIUM TIMELINE
+================================ */
+
+.experience-timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 30px;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    #6366f1,
+    #a855f7
+  );
+}
+
+.exp-card {
+  position: relative;
+  margin-bottom: 3.5rem;
+  padding-left: 30px;
+}
+
+.exp-dot {
+  position: absolute;
+  left: -6px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(99,102,241,0.15);
+}
+
+.exp-content {
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 2rem 2.2rem;
+  transition: all 0.35s ease;
+}
+
+body.light .exp-content {
+  background: #ffffff;
+}
+
+.exp-content:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.exp-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.exp-content h3 span {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.exp-date {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.exp-content p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 
