@@ -354,17 +354,18 @@ footer {
   }
 }
 /* ===============================
-   CERTIFICATIONS
+   CERTIFICATIONS – PREMIUM CARDS
 ================================ */
+
+.cert-grid {
+  margin-top: 3rem;
+}
+
 .cert-card {
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.08),
-    rgba(255,255,255,0.02)
-  );
+  background: var(--card);
   border: 1px solid var(--border);
-  border-radius: 18px;
-  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  padding: 2.4rem 2rem;
   text-align: center;
   transition: all 0.35s ease;
   position: relative;
@@ -375,8 +376,17 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: var(--primary);
-  opacity: 0.06;
+  background: linear-gradient(
+    135deg,
+    rgba(99,102,241,0.12),
+    rgba(168,85,247,0.12)
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.cert-card:hover::before {
+  opacity: 1;
 }
 
 .cert-card:hover {
@@ -384,35 +394,53 @@ footer {
   box-shadow: var(--shadow);
 }
 
-.cert-icon {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+.cert-logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body.light .cert-logo {
+  background: #f1f5f9;
+}
+
+.cert-logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
 }
 
 .cert-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
+  font-weight: 700;
   margin-bottom: 0.6rem;
 }
 
 .cert-card p {
   font-size: 0.95rem;
   color: var(--muted);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .cert-btn {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.4rem;
   border-radius: 999px;
   background: var(--primary);
-  color: white;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cert-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(99,102,241,0.4);
 }
 
 /* ===============================
@@ -651,6 +679,7 @@ body.light .project-card {
     padding: 2.2rem;
   }
 }
+
 
 
 
