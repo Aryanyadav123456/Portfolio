@@ -38,9 +38,7 @@ body.light {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', sans-serif;
@@ -87,13 +85,11 @@ body.light .navbar {
   font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: var(--text);
-}
+.nav-links a:hover { color: var(--text); }
 
 #themeToggle {
   margin-left: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   background: none;
   border: none;
   cursor: pointer;
@@ -104,9 +100,10 @@ body.light .navbar {
 ================================ */
 .hero {
   min-height: 100vh;
-  padding: 6rem 2rem 4rem;
-  background: radial-gradient(circle at top, #1e1b4b, transparent 55%),
-              linear-gradient(135deg, #020617, #020617);
+  padding: 6rem 2rem;
+  background:
+    radial-gradient(circle at top, #1e1b4b, transparent 55%),
+    linear-gradient(135deg, #020617, #020617);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -125,9 +122,9 @@ body.light .hero {
 }
 
 .hero-text h1 {
-  font-size: clamp(2.8rem, 6vw, 4rem);
+  font-size: clamp(3rem, 6vw, 4.5rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.05;
 }
 
 .hero-text h1 span {
@@ -137,7 +134,7 @@ body.light .hero {
 }
 
 .hero-text h2 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 1.2rem 0;
   color: var(--muted);
 }
@@ -173,9 +170,7 @@ body.light .hero {
   color: var(--text);
 }
 
-.btn.outline:hover {
-  background: var(--card);
-}
+.btn.outline:hover { background: var(--card); }
 
 /* ===============================
    HERO IMAGE
@@ -193,8 +188,8 @@ body.light .hero {
   height: 260px;
   background: var(--primary);
   border-radius: 50%;
-  filter: blur(50px);
-  opacity: 0.7;
+  filter: blur(55px);
+  opacity: 0.75;
 }
 
 .hero-image img {
@@ -213,9 +208,7 @@ body.light .hero {
   padding: 6rem 2rem;
 }
 
-.section.alt {
-  background: var(--section-bg);
-}
+.section.alt { background: var(--section-bg); }
 
 .section h2 {
   text-align: center;
@@ -251,17 +244,90 @@ body.light .hero {
 }
 
 /* ===============================
-   TIMELINE
+   CONTACT SECTION – PREMIUM CTA
 ================================ */
-.timeline {
-  max-width: 800px;
-  margin: auto;
+.contact-section {
+  padding: 140px 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(99,102,241,0.12),
+    rgba(168,85,247,0.12)
+  );
+  display: flex;
+  justify-content: center;
 }
 
-.timeline-item {
-  padding: 2rem;
-  border-left: 3px solid #6366f1;
-  margin-bottom: 2rem;
+.contact-card {
+  max-width: 900px;
+  width: 100%;
+  padding: 80px 60px;
+  text-align: center;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 40px 120px rgba(0,0,0,0.25);
+}
+
+body.light .contact-card {
+  background: rgba(255,255,255,0.9);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.contact-title {
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.contact-title span {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-subtitle {
+  max-width: 620px;
+  margin: 0 auto 48px;
+  font-size: 1.1rem;
+  color: var(--muted);
+}
+
+.contact-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px 22px;
+  border-radius: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all 0.35s ease;
+}
+
+body.light .contact-btn {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.contact-btn svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.contact-btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(99,102,241,0.35);
 }
 
 /* ===============================
@@ -287,112 +353,3 @@ footer {
     margin: auto auto 2rem;
   }
 }
-/* ===============================
-   CONTACT SECTION – PREMIUM CTA
-================================ */
-
-.contact-section {
-  padding: 140px 20px;
-  background: linear-gradient(
-    135deg,
-    rgba(99,102,241,0.12),
-    rgba(168,85,247,0.12)
-  );
-  display: flex;
-  justify-content: center;
-}
-
-.contact-card {
-  max-width: 900px;
-  width: 100%;
-  padding: 80px 60px;
-  text-align: center;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255,255,255,0.15);
-  box-shadow: 0 40px 120px rgba(0,0,0,0.25);
-}
-
-body.light .contact-card {
-  background: rgba(255,255,255,0.85);
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.contact-title {
-  font-size: clamp(2.2rem, 4vw, 3.2rem);
-  font-weight: 800;
-  margin-bottom: 16px;
-}
-
-.contact-title span {
-  background: linear-gradient(135deg, #6366f1, #a855f7);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.contact-subtitle {
-  max-width: 620px;
-  margin: 0 auto 48px;
-  font-size: 1.1rem;
-  color: var(--text-muted);
-}
-
-.contact-actions {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 22px;
-}
-
-.contact-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 18px 22px;
-  border-radius: 14px;
-  font-weight: 600;
-  text-decoration: none;
-  color: var(--text);
-  background: linear-gradient(
-    135deg,
-    rgba(255,255,255,0.08),
-    rgba(255,255,255,0.02)
-  );
-  border: 1px solid rgba(255,255,255,0.15);
-  transition: all 0.35s ease;
-}
-
-body.light .contact-btn {
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.08);
-}
-
-.contact-btn img {
-  width: 22px;
-  height: 22px;
-}
-
-.contact-btn:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 45px rgba(99,102,241,0.35);
-}
-
-/* Accent colors */
-.contact-btn.email:hover {
-  box-shadow: 0 18px 45px rgba(59,130,246,0.4);
-}
-
-.contact-btn.github:hover {
-  box-shadow: 0 18px 45px rgba(0,0,0,0.4);
-}
-
-.contact-btn.linkedin:hover {
-  box-shadow: 0 18px 45px rgba(10,102,194,0.4);
-}
-
-.contact-btn.resume:hover {
-  box-shadow: 0 18px 45px rgba(168,85,247,0.4);
-}
-
