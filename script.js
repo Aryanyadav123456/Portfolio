@@ -19,32 +19,34 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================================
-     🌗 DARK / LIGHT MODE TOGGLE
-     ========================================================= */
-  const toggleBtn = document.createElement("button");
-  toggleBtn.id = "themeToggle";
-  toggleBtn.innerHTML = "🌙";
-  document.querySelector(".nav").appendChild(toggleBtn);
+    /* ======================= DARK / LIGHT MODE ======================= */
+const toggleBtn = document.createElement("button");
+toggleBtn.id = "themeToggle";
+toggleBtn.setAttribute("aria-label", "Toggle Theme");
+toggleBtn.textContent = "🌙";
 
-  const body = document.body;
-  const savedTheme = localStorage.getItem("theme");
+document.querySelector("header .nav").appendChild(toggleBtn);
 
-  if (savedTheme === "light") {
-    body.classList.add("light");
-    toggleBtn.innerHTML = "🌞";
+const body = document.body;
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "light") {
+  body.classList.add("light");
+  toggleBtn.textContent = "🌞";
+}
+
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("light");
+
+  if (body.classList.contains("light")) {
+    toggleBtn.textContent = "🌞";
+    localStorage.setItem("theme", "light");
+  } else {
+    toggleBtn.textContent = "🌙";
+    localStorage.setItem("theme", "dark");
   }
+});
 
-  toggleBtn.addEventListener("click", () => {
-    body.classList.toggle("light");
-
-    if (body.classList.contains("light")) {
-      toggleBtn.innerHTML = "🌞";
-      localStorage.setItem("theme", "light");
-    } else {
-      toggleBtn.innerHTML = "🌙";
-      localStorage.setItem("theme", "dark");
-    }
-  });
 
   /* =========================================================
      🔥 SCROLL PROGRESS INDICATOR
@@ -136,3 +138,4 @@ document.addEventListener("DOMContentLoaded", () => {
   gtag("config", "G-XXXXXXXXXX");
 
 });
+
