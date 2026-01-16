@@ -9,15 +9,12 @@
         content="AI/ML Engineer specializing in Generative AI, RAG systems, Computer Vision, and production ML pipelines."/>
 
   <!-- Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
-  <!-- Styles -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 
@@ -27,14 +24,12 @@
 <header class="navbar">
   <div class="nav-inner">
     <div class="logo">Aryan<span>.</span></div>
-
-    <nav class="nav-links">
+    <nav>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
-      <a href="#certifications">Certificates</a>
       <a href="#blogs">Blogs</a>
       <a href="#contact">Contact</a>
-      <button id="themeToggle" aria-label="Toggle Theme">🌞</button>
+      <button id="themeToggle">🌞</button>
     </nav>
   </div>
 </header>
@@ -48,19 +43,18 @@
       <h2>AI / ML Engineer</h2>
 
       <p>
-        I design and deploy <strong>production-ready AI systems</strong>
-        across Generative AI, RAG pipelines, and Computer Vision —
-        built for measurable business impact.
+        I build <strong>production-grade AI systems</strong> —
+        Generative AI, RAG pipelines, Computer Vision and real-world ML products.
       </p>
 
-      <div class="hero-buttons">
+      <div class="hero-actions">
         <a href="#projects" class="btn primary">View Projects</a>
-        <a href="#contact" class="btn outline">Contact Me</a>
+        <a href="#contact" class="btn outline">Contact</a>
       </div>
     </div>
 
     <div class="hero-image">
-      <img src="assets/Photo.jpg" alt="Aryan Devaragari">
+      <img src="Photo.jpg" alt="Aryan Devaragari">
     </div>
 
   </div>
@@ -70,43 +64,45 @@
 <section id="projects" class="section alt">
   <h2>Featured Projects</h2>
 
-  <div class="projects-grid">
+  <div class="projects">
 
     <div class="project-card">
-      <div class="project-image">
-        <img src="assets/project-agentic-ai.jpg" alt="Agentic AI Project">
-      </div>
-      <div class="project-content">
-        <span class="project-tag">Agentic AI</span>
+      <img src="project-agentic-ai.jpg" alt="">
+      <div>
+        <span class="tag">Agentic AI</span>
         <h3>Company Profile Extractor</h3>
-        <p>Multi-agent AI automating B2B research using Gemini + LangChain.</p>
-        <div class="project-impact">⏱ 50% research time reduced</div>
+        <p>Multi-agent AI system automating B2B research using Gemini & LangChain.</p>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-image">
-        <img src="assets/project-finance-ai.jpg" alt="Finance AI Project">
-      </div>
-      <div class="project-content">
-        <span class="project-tag">RAG Systems</span>
-        <h3>AI-Powered Financial Assistant</h3>
-        <p>Real-time market insights using vector search & LLM reasoning.</p>
-        <div class="project-impact">📈 Faster & accurate decisions</div>
+      <img src="project-finance-ai.jpg" alt="">
+      <div>
+        <span class="tag">RAG Systems</span>
+        <h3>AI Financial Assistant</h3>
+        <p>Real-time market insights using vector search, APIs and LLM reasoning.</p>
       </div>
     </div>
 
     <div class="project-card">
-      <div class="project-image">
-        <img src="assets/project-vision-ai.jpg" alt="Computer Vision Project">
-      </div>
-      <div class="project-content">
-        <span class="project-tag">Computer Vision</span>
+      <img src="project-vision-ai.jpg.jpg" alt="">
+      <div>
+        <span class="tag">Computer Vision</span>
         <h3>License Plate & Dent Detection</h3>
-        <p>YOLO-based vehicle inspection automation pipeline.</p>
-        <div class="project-impact">🚗 Automated quality checks</div>
+        <p>YOLO + OpenCV based automated vehicle inspection system.</p>
       </div>
     </div>
+
+    <a class="project-card link"
+       href="https://shrimppondmonitoring-8kv9g4vrj9wxxlgvwgg9c4.streamlit.app/"
+       target="_blank">
+      <img src="ship.jpg" alt="">
+      <div>
+        <span class="tag">AI + IoT</span>
+        <h3>Shrimp Pond Monitoring</h3>
+        <p>AI-powered aquaculture monitoring with real-time analytics.</p>
+      </div>
+    </a>
 
   </div>
 </section>
@@ -115,56 +111,69 @@
 <section id="experience" class="section">
   <h2>Experience</h2>
 
-  <div class="experience-timeline">
-
-    <div class="exp-card">
-      <div class="exp-dot"></div>
-      <div class="exp-content">
-        <h3>AI/ML Engineer <span>— Tech-Intelleon</span></h3>
-        <div class="exp-date">Jan 2025 – Oct 2025</div>
-        <p>Designed production-grade RAG pipelines and LLM platforms.</p>
-      </div>
+  <div class="timeline">
+    <div class="item">
+      <h3>AI/ML Engineer — Tech-Intelleon</h3>
+      <p>Jan 2025 – Oct 2025</p>
+      <span>Production RAG pipelines, LLM systems, AI deployments</span>
     </div>
 
-    <div class="exp-card">
-      <div class="exp-dot"></div>
-      <div class="exp-content">
-        <h3>AI/ML Intern <span>— Innomatics</span></h3>
-        <div class="exp-date">Jan 2024 – Jun 2024</div>
-        <p>Built AI code reviewers, RAG engines & LLM tools.</p>
-      </div>
+    <div class="item">
+      <h3>AI/ML Intern — Innomatics Research Labs</h3>
+      <p>Jan 2024 – Jun 2024</p>
+      <span>RAG search engine, AI code reviewer, LLM tools</span>
     </div>
 
+    <div class="item">
+      <h3>Data Scientist Intern — VOZIQ.AI</h3>
+      <p>Jul 2024 – Dec 2024</p>
+      <span>Churn prediction, ML pipelines, BI dashboards</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BLOGS ================= -->
+<section id="blogs" class="section alt">
+  <h2>Blogs & Writing</h2>
+
+  <div class="blogs">
+    <div class="blog">
+      <h3>How RAG Systems Work in Production</h3>
+      <p>Designing scalable retrieval pipelines with vector databases.</p>
+    </div>
+
+    <div class="blog">
+      <h3>Agentic AI Explained</h3>
+      <p>Multi-agent orchestration using LangGraph & CrewAI.</p>
+    </div>
+
+    <div class="blog">
+      <h3>Computer Vision in Insurance</h3>
+      <p>Automated vehicle damage detection using YOLO.</p>
+    </div>
   </div>
 </section>
 
 <!-- ================= CONTACT ================= -->
-<section id="contact" class="contact-section">
-  <div class="contact-card">
-    <h2 class="contact-title">Let’s <span>Build</span> Something Great</h2>
+<section id="contact" class="contact">
+  <h2>Let’s Build Something Amazing</h2>
 
-    <div class="contact-actions">
-      <a href="mailto:devaragariaryanyadav@gmail.com" class="contact-btn">
-        <i class="fa-solid fa-envelope"></i> Email
-      </a>
+  <div class="contact-links">
+    <a href="mailto:devaragariaryanyadav@gmail.com">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
 
-      <a href="https://github.com/Aryanyadav123456" target="_blank" class="contact-btn">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
+    <a href="https://github.com/Aryanyadav123456" target="_blank">
+      <i class="fa-brands fa-github"></i> GitHub
+    </a>
 
-      <a href="https://www.linkedin.com/in/aryandevaragari567894"
-         target="_blank" class="contact-btn">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
-    </div>
+    <a href="https://www.linkedin.com/in/aryandevaragari567894" target="_blank">
+      <i class="fa-brands fa-linkedin"></i> LinkedIn
+    </a>
   </div>
 </section>
 
 <footer>© 2025 Aryan Devaragari</footer>
-
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
 <script src="script.js"></script>
 </body>
