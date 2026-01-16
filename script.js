@@ -1,61 +1,86 @@
+/* ===============================
+   PORTFOLIO SCRIPT
+   Dark / Light Mode + GSAP
+================================ */
+
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* THEME TOGGLE */
-  const toggle = document.getElementById("themeToggle");
+  /* ===============================
+     DARK / LIGHT MODE TOGGLE
+  ================================ */
+
+  const toggleBtn = document.getElementById("themeToggle");
   const body = document.body;
 
-  if (localStorage.getItem("theme") === "light") {
-    body.classList.add("light");
-    toggle.textContent = "🌙";
+  if (!toggleBtn) {
+    console.error("❌ themeToggle button not found");
+    return;
   }
 
-  toggle.onclick = () => {
-    body.classList.toggle("light");
-    toggle.textContent = body.classList.contains("light") ? "🌙" : "🌞";
-    localStorage.setItem("theme", body.classList.contains("light") ? "light" : "dark");
-  };
+  // Load saved theme
+  const savedTheme = localStorage.getItem("theme");
 
-  /* GSAP */
+  if (savedTheme === "light") {
+    body.classList.add("light");
+    toggleBtn.textContent = "🌙";
+  } else {
+    body.classList.remove("light");
+    toggleBtn.textContent = "🌞";
+  }
+
+  toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("light");
+
+    if (body.classList.contains("light")) {
+      toggleBtn.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+    } else {
+      toggleBtn.textContent = "🌞";
+      localStorage.setItem("theme", "dark");
+    }
+  });
+
+  /* ===============================
+     GSAP ANIMATIONS
+  ================================ */
+
   gsap.registerPlugin(ScrollTrigger);
 
-  gsap.from(".hero-text *", {
+  gsap.from(".hero-text h1", {
     opacity: 0,
     y: 40,
-    stagger: 0.15,
     duration: 1,
     ease: "power3.out"
   });
 
-  gsap.utils.toArray(".section").forEach(sec => {
-    gsap.from(sec, {
+  gsap.from(".hero-text h2, .hero-text p, .hero-buttons", {
+    opacity: 0,
+    y: 30,
+    duration: 1,
+    delay: 0.3,
+    stagger: 0.15,
+    ease: "power3.out"
+  });
+
+  gsap.from(".hero-image", {
+    opacity: 0,
+    scale: 0.9,
+    duration: 1,
+    delay: 0.6,
+    ease: "power3.out"
+  });
+
+  gsap.utils.toArray(".section").forEach(section => {
+    gsap.from(section, {
       opacity: 0,
       y: 60,
       duration: 1,
-      scrollTrigger: { trigger: sec, start: "top 80%" }
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%"
+      }
     });
   });
-
-  /* CERT MODAL */
-  const modal = document.getElementById("certModal");
-  const frame = document.getElementById("certFrame");
-
-  document.querySelectorAll(".cert-card").forEach(card => {
-    card.onclick = () => {
-      frame.src = card.dataset.cert;
-      modal.classList.add("show");
-    };
-  });
-
-  document.querySelector(".close-modal").onclick = () => {
-    modal.classList.remove("show");
-    frame.src = "";
-  };
-
-  window.onclick = e => {
-    if (e.target === modal) {
-      modal.classList.remove("show");
-      frame.src = "";
-    }
-  };
 
 });
