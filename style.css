@@ -396,3 +396,66 @@ nav a.active {
 .card:hover::after {
   opacity: 1;
 }
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.7s ease;
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 6px solid rgba(255,255,255,0.15);
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+body {
+  background: radial-gradient(circle at top, #111827, #000);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+body.light {
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+  color: #0f172a;
+}
+
+body.light header {
+  background: rgba(255,255,255,0.85);
+}
+
+body.light .card,
+body.light .contact a {
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+#progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  z-index: 9998;
+}
+
+
