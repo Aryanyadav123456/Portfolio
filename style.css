@@ -287,3 +287,18 @@ footer {
     margin-left: 14px;
   }
 }
+/* =========================================================
+   LIGHT MODE THEME
+   ========================================================= */
+
+body.light {
+  --bg: #ffffff;
+  --card: #f8fafc;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #4f46e5;
+  --glass: rgba(0,0,0,0.08);
+
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+}
+
