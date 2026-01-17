@@ -4,26 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aryan Devaragari | AI/ML Engineer</title>
-export default function Navbar() {
-  return (
-    <nav className="navbar">
-      <div className="navbar-logo">Aryan<span>.</span></div>
-
-      <ul className="navbar-links">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certificates">Certificates</a></li>
-        <li><a href="#blogs">Blogs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-
-      <div className="navbar-icon">🌞</div>
-    </nav>
-  );
-}
 
   <!-- SEO -->
-  <meta name="description" content="AI/ML Engineer specializing in Generative AI, RAG systems, Computer Vision, and production ML pipelines." />
+  <meta name="description" content="AI/ML Engineer specializing in Generative AI, RAG systems, Agentic AI, and production ML pipelines." />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -31,6 +14,7 @@ export default function Navbar() {
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css"/>
 </head>
 
@@ -41,22 +25,22 @@ export default function Navbar() {
   <div class="spinner"></div>
 </div>
 
-<!-- PROGRESS BAR -->
+<!-- SCROLL PROGRESS -->
 <div id="progressBar"></div>
 
 <!-- NAVBAR -->
-<header>
-  <div class="nav">
-    <div class="logo">Aryan<span>.</span></div>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certificates</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#contact">Contact</a>
-      <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
-    </nav>
-  </div>
+<header class="navbar">
+  <div class="navbar-logo">Aryan<span>.</span></div>
+
+  <ul class="navbar-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#blogs">Blogs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <button id="themeToggle" class="navbar-icon" aria-label="Toggle Theme">🌙</button>
 </header>
 
 <!-- HERO -->
@@ -65,7 +49,7 @@ export default function Navbar() {
     <span class="eyebrow">AI / ML ENGINEER</span>
 
     <h1>
-      Building <span>AI Systems</span><br/>
+      Building <span>AI Systems</span><br />
       That Work in Production
     </h1>
 
@@ -81,10 +65,9 @@ export default function Navbar() {
   </div>
 
   <div class="hero-img">
-    <img src="Photo.jpg" alt="Aryan Devaragari" />
+    <img src="Photo.jpg" alt="Aryan Devaragari" loading="lazy"/>
   </div>
 </section>
-
 
 <!-- PROJECTS -->
 <section id="projects" class="section">
@@ -128,116 +111,57 @@ export default function Navbar() {
 <section id="experience" class="section experience">
   <div class="wrap">
     <h2>Experience</h2>
-    <p class="subtitle">Building production-grade AI systems in real-world environments</p>
+    <p class="subtitle">Production-grade AI in real-world environments</p>
 
     <div class="experience-list">
 
-      <!-- TechIntelleon -->
       <div class="experience-card">
-        <div class="exp-header">
-          <div>
-            <h3>AI Engineer</h3>
-            <span class="company">TechIntelleon</span>
-          </div>
-          <span class="duration">Jan 2025 – Oct 2025</span>
-        </div>
-
-        <ul class="exp-points">
-          <li>Architected and deployed <strong>Generative AI solutions</strong> including RAG-based assistants and Agentic AI workflows.</li>
-          <li>Built <strong>LLM-powered automation systems</strong> improving internal productivity and response accuracy.</li>
-          <li>Integrated AI pipelines with scalable backends, focusing on reliability and real-world deployment.</li>
-          <li>Led prompt engineering, vector database design, and model orchestration for enterprise use cases.</li>
+        <h3>AI Engineer — <span>TechIntelleon</span></h3>
+        <span class="duration">Jan 2025 – Oct 2025</span>
+        <ul>
+          <li>Built Agentic AI & RAG-based assistants</li>
+          <li>LLM-powered automation for enterprise workflows</li>
+          <li>Prompt engineering, vector DBs, scalable deployment</li>
         </ul>
-
-        <div class="tech-stack">
-          <span>LLMs</span>
-          <span>RAG</span>
-          <span>Agentic AI</span>
-          <span>LangChain</span>
-          <span>Vector DBs</span>
-        </div>
       </div>
 
-      <!-- VOZIQ -->
       <div class="experience-card">
-        <div class="exp-header">
-          <div>
-            <h3>Data Scientist Intern</h3>
-            <span class="company">VOZIQ.AI</span>
-          </div>
-          <span class="duration">Jul 2024 – Dec 2024</span>
-        </div>
-
-        <ul class="exp-points">
-          <li>Developed <strong>churn prediction models</strong> on large-scale customer datasets.</li>
-          <li>Performed advanced <strong>feature engineering</strong> to improve model performance and stability.</li>
-          <li>Designed <strong>SQL-driven analytics pipelines</strong> supporting production dashboards.</li>
-          <li>Delivered insights that supported <strong>customer retention strategy</strong> and decision-making.</li>
+        <h3>Data Scientist Intern — <span>VOZIQ.AI</span></h3>
+        <span class="duration">Jul 2024 – Dec 2024</span>
+        <ul>
+          <li>Churn prediction on large customer datasets</li>
+          <li>Advanced feature engineering & SQL pipelines</li>
+          <li>Production ML dashboards for retention insights</li>
         </ul>
-
-        <div class="tech-stack">
-          <span>Python</span>
-          <span>SQL</span>
-          <span>Machine Learning</span>
-          <span>EDA</span>
-          <span>Churn Modeling</span>
-        </div>
       </div>
 
-      <!-- Innomatics -->
       <div class="experience-card">
-        <div class="exp-header">
-          <div>
-            <h3>AI / ML Intern</h3>
-            <span class="company">Innomatics Research Labs</span>
-          </div>
-          <span class="duration">Jan 2024 – Jun 2024</span>
-        </div>
-
-        <ul class="exp-points">
-          <li>Built <strong>RAG-based search engines</strong> using LLMs and vector databases.</li>
-          <li>Developed <strong>AI code review tools</strong> to assist developers.</li>
-          <li>Created GenAI applications using <strong>LangChain</strong> and modern LLM stacks.</li>
+        <h3>AI/ML Intern — <span>Innomatics Research Labs</span></h3>
+        <span class="duration">Jan 2024 – Jun 2024</span>
+        <ul>
+          <li>RAG search engines & GenAI tools</li>
+          <li>LangChain, vector databases, LLM apps</li>
         </ul>
-
-        <div class="tech-stack">
-          <span>LangChain</span>
-          <span>LLMs</span>
-          <span>Vector DBs</span>
-          <span>GenAI</span>
-        </div>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section certifications">
+<!-- CERTIFICATES -->
+<section id="certificates" class="section">
   <div class="wrap">
     <h2>Certifications</h2>
-    <p class="subtitle">Verified technical credentials</p>
 
     <div class="grid">
-      <div class="card cert-card">
-        <div class="card-body">
-          <h3>Gold Batch Certificate</h3>
-          <p>Top-performing candidate in advanced AI & ML program.</p>
-          <a class="btn-link" href="Certificate1.pdf" target="_blank" rel="noopener">
-  View Certificate →
-</a>
-        </div>
+      <div class="card">
+        <h3>Gold Batch Certificate</h3>
+        <a href="Certificate1.pdf" target="_blank">View Certificate →</a>
       </div>
 
-      <div class="card cert-card">
-        <div class="card-body">
-          <h3>Deep Learning Expertise Certificate</h3>
-          <p>Hands-on expertise in CNNs, RNNs, Transformers & optimization.</p>
-         <a class="btn-link" href="Certificate2.pdf" target="_blank" rel="noopener">
-  View Certificate →
-</a>
-
-        </div>
+      <div class="card">
+        <h3>Deep Learning Expertise</h3>
+        <a href="Certificate2.pdf" target="_blank">View Certificate →</a>
       </div>
     </div>
   </div>
@@ -246,31 +170,23 @@ export default function Navbar() {
 <!-- BLOGS -->
 <section id="blogs" class="section">
   <div class="wrap">
-    <h2>Blogs & Writing</h2>
+    <h2>Blogs</h2>
 
     <div class="grid">
-      <div class="card blog-card">
-        <div class="card-body">
-          <h3>Distance Metrics Explained</h3>
-          <p>How similarity truly works in machine learning models.</p>
-          <a class="btn-link outline" target="_blank"
-   href="https://medium.com/@devaragariaryanyadav/distance-metrics-3059831ea76a">
-  Read Blog →
-</a>
-
-        </div>
+      <div class="card">
+        <h3>Distance Metrics Explained</h3>
+        <a target="_blank"
+           href="https://medium.com/@devaragariaryanyadav/distance-metrics-3059831ea76a">
+          Read Blog →
+        </a>
       </div>
 
-      <div class="card blog-card">
-        <div class="card-body">
-          <h3>Generative AI Demystified</h3>
-          <p>Architectures, fundamentals, and real-world GenAI use cases.</p>
-          <a class="btn-link outline" target="_blank"
-   href="https://medium.com/@devaragariaryanyadav/generative-ai-8d79d90db58e">
-  Read Blog →
-</a>
-
-        </div>
+      <div class="card">
+        <h3>Generative AI Demystified</h3>
+        <a target="_blank"
+           href="https://medium.com/@devaragariaryanyadav/generative-ai-8d79d90db58e">
+          Read Blog →
+        </a>
       </div>
     </div>
   </div>
@@ -278,40 +194,17 @@ export default function Navbar() {
 
 <!-- CONTACT -->
 <section id="contact" class="contact-cta">
-  <div class="contact-box">
-    <h2>Let’s Build Something Impactful</h2>
-    <p>
-      Open to AI/ML roles, GenAI projects, and high-impact collaborations.
-      Let’s talk.
-    </p>
+  <h2>Let’s Build Something Impactful</h2>
 
-    <div class="contact-actions">
-      <a href="mailto:devaragariaryanyadav@gmail.com" class="contact-btn primary">
-        <i class="fa-solid fa-envelope"></i>
-        Email Me
-      </a>
-
-      <a href="https://github.com/Aryanyadav123456" target="_blank" class="contact-btn">
-        <i class="fa-brands fa-github"></i>
-        GitHub
-      </a>
-
-      <a href="https://www.linkedin.com/in/aryandevaragari567894"
-         target="_blank" class="contact-btn">
-        <i class="fa-brands fa-linkedin"></i>
-        LinkedIn
-      </a>
-    </div>
+  <div class="contact-actions">
+    <a href="mailto:devaragariaryanyadav@gmail.com">Email</a>
+    <a href="https://github.com/Aryanyadav123456" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/aryandevaragari567894" target="_blank">LinkedIn</a>
   </div>
 </section>
-
 
 <footer>© 2025 Aryan Devaragari</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
