@@ -3,222 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryan Devaragari | AI/ML Engineer</title>
+  <title>Aryan | AI & Data Scientist</title>
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- SEO -->
-  <meta name="description" content="AI/ML Engineer specializing in Generative AI, RAG systems, Computer Vision, and production ML pipelines." />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-
-  <link rel="stylesheet" href="style.css"/>
+  <!-- Google Analytics (REPLACE ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 
 <body>
-
-<!-- PAGE LOADER -->
-<div id="pageLoader">
+<!-- Loader -->
+<div id="loader">
   <div class="spinner"></div>
 </div>
 
-<!-- PROGRESS BAR -->
-<div id="progressBar"></div>
+<!-- Progress bar -->
+<div id="progress"></div>
 
-<!-- NAVBAR -->
 <header>
-  <div class="nav">
-    <div class="logo">Aryan<span>.</span></div>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certificates</a>
-      <a href="#blogs">Blogs</a>
-      <a href="#contact">Contact</a>
-      <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
-    </nav>
-  </div>
+  <h2>Aryan</h2>
+  <button id="themeToggle">🌞</button>
 </header>
 
-<!-- HERO -->
 <section class="hero section">
-  <div>
-    <h1>Aryan <span>Devaragari</span></h1>
-    <h2>AI / ML Engineer</h2>
-    <p>
-      I design and deploy <strong>production-grade AI systems</strong> —
-      Agentic AI, RAG pipelines, Computer Vision, and scalable ML platforms
-      delivering real-world business impact.
-    </p>
-    <div class="btns">
-      <a class="primary" href="#projects">View Projects</a>
-      <a class="outline" href="#contact">Contact Me</a>
-    </div>
-  </div>
-
-  <div class="hero-img">
-    <img src="Photo.jpg" alt="Aryan Devaragari" loading="lazy"/>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="wrap">
-    <h2>Featured Projects</h2>
-    <p class="subtitle">End-to-end AI systems built for scale</p>
-
-    <div class="grid">
-      <div class="card">
-        <img src="project-agentic-ai.jpg" loading="lazy"/>
-        <div class="card-body">
-          <span class="tag">Agentic AI</span>
-          <h3>Company Profile Extractor</h3>
-          <p>Multi-agent AI system automating B2B research using LLM orchestration.</p>
-        </div>
-      </div>
-
-      <div class="card">
-        <img src="project-finance-ai.jpg" loading="lazy"/>
-        <div class="card-body">
-          <span class="tag">RAG</span>
-          <h3>AI Financial Assistant</h3>
-          <p>Context-aware financial insights using vector databases & LLMs.</p>
-        </div>
-      </div>
-
-      <a class="card" target="_blank"
-         href="https://shrimppondmonitoring-8kv9g4vrj9wxxlgvwgg9c4.streamlit.app/">
-        <img src="ship.jpg" loading="lazy"/>
-        <div class="card-body">
-          <span class="tag">AI + IoT</span>
-          <h3>Shrimp Pond Monitoring</h3>
-          <p>AI-powered aquaculture monitoring & predictive analytics.</p>
-        </div>
-      </a>
-    </div>
-  </div>
+  <h1>AI / ML Engineer</h1>
+  <p>Applied Statistics • Deep Learning • GenAI</p>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <div class="wrap">
-    <h2>Experience</h2>
-
-    <div class="timeline">
-      <div class="job">
-        <h3>AI Engineer — TechIntelleon</h3>
-        <span>Jan 2025 – Oct 2025</span>
-        <p>
-          Led development of Generative AI solutions including RAG-based assistants,
-          Agentic AI workflows, and LLM-powered automation systems.
-          Worked on backend integration, prompt engineering, and scalable AI deployments
-          for enterprise use cases.
-        </p>
-      </div>
-
-      <div class="job">
-        <h3>Data Scientist Intern — VOZIQ.AI</h3>
-        <span>Jul 2024 – Dec 2024</span>
-        <p>
-          Built churn prediction models, engineered features on large-scale customer data,
-          designed SQL-driven analytics pipelines, and supported production ML dashboards
-          for customer retention intelligence.
-        </p>
-      </div>
-
-      <div class="job">
-        <h3>AI/ML Intern — Innomatics Research Labs</h3>
-        <span>Jan 2024 – Jun 2024</span>
-        <p>
-          Developed RAG-based search engines, AI code reviewers,
-          and GenAI applications using LangChain, vector databases, and LLMs.
-        </p>
-      </div>
-    </div>
+<section class="section">
+  <h2>Experience</h2>
+  <div class="card">
+    <h3>VOZIQ AI – Data Science Intern</h3>
+    <p>
+      Worked on churn prediction, feature engineering, SQL analytics,
+      ML modeling, and GenAI research-driven insights.
+    </p>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section certifications">
-  <div class="wrap">
-    <h2>Certifications</h2>
-    <p class="subtitle">Verified technical credentials</p>
+<!-- CERTIFICATES -->
+<section class="section">
+  <h2>Certificates</h2>
 
-    <div class="grid">
-      <div class="card cert-card">
-        <div class="card-body">
-          <h3>Gold Batch Certificate</h3>
-          <p>Top-performing candidate in advanced AI & ML program.</p>
-          <a class="primary small" href="Certificate1.pdf" target="_blank">
-            View Certificate
-          </a>
-        </div>
-      </div>
+  <div class="card">
+    <h3>Gold Batch Certificate</h3>
+    <p>Top performer recognition</p>
+    <div class="card-actions">
+      <a href="certificates/gold.pdf" target="_blank">View Certificate</a>
+    </div>
+  </div>
 
-      <div class="card cert-card">
-        <div class="card-body">
-          <h3>Deep Learning Expertise Certificate</h3>
-          <p>Hands-on expertise in CNNs, RNNs, Transformers & optimization.</p>
-          <a class="primary small" href="Certificate2.pdf" target="_blank">
-            View Certificate
-          </a>
-        </div>
-      </div>
+  <div class="card">
+    <h3>Deep Learning Certificate</h3>
+    <p>CNNs, RNNs & Transformers</p>
+    <div class="card-actions">
+      <a href="certificates/dl.pdf" target="_blank">View Certificate</a>
     </div>
   </div>
 </section>
 
 <!-- BLOGS -->
-<section id="blogs" class="section">
-  <div class="wrap">
-    <h2>Blogs & Writing</h2>
+<section class="section">
+  <h2>Blogs</h2>
 
-    <div class="grid">
-      <div class="card blog-card">
-        <div class="card-body">
-          <h3>Distance Metrics Explained</h3>
-          <p>How similarity truly works in machine learning models.</p>
-          <a class="outline small" target="_blank"
-             href="https://medium.com/@devaragariaryanyadav/distance-metrics-3059831ea76a">
-            Read Blog →
-          </a>
-        </div>
-      </div>
+  <div class="card">
+    <h3>Distance Metrics Explained</h3>
+    <p>Similarity measures in ML models</p>
+    <div class="card-actions">
+      <a target="_blank"
+         href="https://medium.com/@devaragariaryanyadav/distance-metrics-3059831ea76a">
+        Read on Medium
+      </a>
+    </div>
+  </div>
 
-      <div class="card blog-card">
-        <div class="card-body">
-          <h3>Generative AI Demystified</h3>
-          <p>Architectures, fundamentals, and real-world GenAI use cases.</p>
-          <a class="outline small" target="_blank"
-             href="https://medium.com/@devaragariaryanyadav/generative-ai-8d79d90db58e">
-            Read Blog →
-          </a>
-        </div>
-      </div>
+  <div class="card">
+    <h3>Generative AI Demystified</h3>
+    <p>Foundations & real-world use cases</p>
+    <div class="card-actions">
+      <a target="_blank"
+         href="https://medium.com/@devaragariaryanyadav/generative-ai-8d79d90db58e">
+        Read on Medium
+      </a>
     </div>
   </div>
 </section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact section">
-  <h2>Let’s Build Something Impactful</h2>
-
-  <a href="mailto:devaragariaryanyadav@gmail.com">
-    <i class="fa-solid fa-envelope"></i>Email
-  </a>
-
-  <a target="_blank" href="https://github.com/Aryanyadav123456">
-    <i class="fa-brands fa-github"></i>GitHub
-  </a>
-
-  <a target="_blank" href="https://www.linkedin.com/in/aryandevaragari567894">
-    <i class="fa-brands fa-linkedin"></i>LinkedIn
-  </a>
-</section>
-
-<footer>© 2025 Aryan Devaragari</footer>
 
 <script src="script.js"></script>
 </body>
