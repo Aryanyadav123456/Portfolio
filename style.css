@@ -390,5 +390,84 @@ nav a {
   transform: translateY(-4px);
   box-shadow: 0 18px 45px rgba(0,0,0,0.5);
 }
+/* ===============================
+   EXPERIENCE SECTION – PREMIUM
+================================ */
+
+.experience-list {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.experience-card {
+  background: linear-gradient(180deg, var(--card), rgba(255,255,255,0.03));
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.35s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-6px);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.exp-header h3 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.company {
+  display: block;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.exp-points {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+}
+
+.exp-points li {
+  margin-bottom: 0.8rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.exp-points strong {
+  color: var(--text);
+}
+
+.tech-stack {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.tech-stack span {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
 
 
