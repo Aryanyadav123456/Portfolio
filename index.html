@@ -20,7 +20,7 @@
 <body>
 
 <!-- PAGE LOADER -->
-<div id="loader">
+<div id="pageLoader">
   <div class="spinner"></div>
 </div>
 
@@ -34,6 +34,7 @@
     <nav>
       <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#certifications">Certificates</a>
       <a href="#blogs">Blogs</a>
       <a href="#contact">Contact</a>
       <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
@@ -42,27 +43,28 @@
 </header>
 
 <!-- HERO -->
-<section class="hero">
+<section class="hero section">
   <div>
     <h1>Aryan <span>Devaragari</span></h1>
     <h2>AI / ML Engineer</h2>
     <p>
-  I design and deploy <strong>production-grade AI systems</strong> —
-  Agentic AI, RAG pipelines, Computer Vision, and ML platforms
-  used by real businesses to drive measurable outcomes.
-</p>
-   <div class="btns">
+      I design and deploy <strong>production-grade AI systems</strong> —
+      Agentic AI, RAG pipelines, Computer Vision, and ML platforms
+      used by real businesses to drive measurable outcomes.
+    </p>
+    <div class="btns">
       <a class="primary" href="#projects">View Projects</a>
       <a class="outline" href="#contact">Contact Me</a>
     </div>
   </div>
+
   <div class="hero-img">
     <img src="Photo.jpg" alt="Aryan Devaragari" loading="lazy"/>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects">
+<section id="projects" class="section">
   <div class="wrap">
     <h2>Featured Projects</h2>
     <p class="subtitle">End-to-end AI systems built for scale</p>
@@ -100,11 +102,22 @@
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="section">
   <div class="wrap">
     <h2>Experience</h2>
 
     <div class="timeline">
+      <div class="job">
+        <h3>AI Engineer — TechIntelleon</h3>
+        <span>Jan 2025 – Present</span>
+        <p>
+          Designing and deploying Generative AI solutions including RAG-based assistants,
+          Agentic AI workflows, and LLM-powered automation tools.
+          Focused on scalable backend integration, prompt engineering,
+          and real-world AI deployment.
+        </p>
+      </div>
+
       <div class="job">
         <h3>Data Scientist Intern — VOZIQ.AI</h3>
         <span>Jul 2024 – Dec 2024</span>
@@ -119,20 +132,52 @@
         <h3>AI/ML Intern — Innomatics Research Labs</h3>
         <span>Jan 2024 – Jun 2024</span>
         <p>
-          Developed RAG search engines, AI code reviewers, and GenAI applications using LangChain & LLMs.
+          Developed RAG search engines, AI code reviewers, and GenAI applications
+          using LangChain, vector databases, and LLMs.
         </p>
       </div>
     </div>
   </div>
 </section>
 
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section certifications">
+  <div class="wrap">
+    <h2>Certifications</h2>
+    <p class="subtitle">Industry-recognized credentials</p>
+
+    <div class="grid">
+      <div class="card cert-card">
+        <div class="card-body">
+          <h3>Deep Learning Specialization</h3>
+          <p>Neural Networks, CNNs, RNNs & Optimization</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <div class="card-body">
+          <h3>Generative AI with LLMs</h3>
+          <p>Prompt engineering, RAG & agent-based systems</p>
+        </div>
+      </div>
+
+      <div class="card cert-card">
+        <div class="card-body">
+          <h3>Data Science & Machine Learning</h3>
+          <p>Python, SQL, ML pipelines & analytics</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- BLOGS -->
-<section id="blogs">
+<section id="blogs" class="section">
   <div class="wrap">
     <h2>Blogs & Writing</h2>
 
     <div class="grid">
-      <a class="card blog-card" target="_blank"
+      <a class="card blog-card blog-link" target="_blank"
          href="https://medium.com/@devaragariaryanyadav/distance-metrics-3059831ea76a">
         <div class="card-body">
           <h3>Distance Metrics Explained</h3>
@@ -140,7 +185,7 @@
         </div>
       </a>
 
-      <a class="card blog-card" target="_blank"
+      <a class="card blog-card blog-link" target="_blank"
          href="https://medium.com/@devaragariaryanyadav/generative-ai-8d79d90db58e">
         <div class="card-body">
           <h3>Generative AI Demystified</h3>
@@ -152,7 +197,7 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
+<section id="contact" class="contact section">
   <h2>Let’s Build Something Impactful</h2>
 
   <a href="mailto:devaragariaryanyadav@gmail.com">
@@ -173,5 +218,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
