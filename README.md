@@ -11,7 +11,7 @@ The portfolio highlights **end-to-end AI/ML projects**, system design thinking, 
 ---
 
 ## 🌐 Live Portfolio
-👉 **[View Live Website](https://yourusername.github.io/portfolio)**  
+👉 **https://aryanyadav123456.github.io/Portfolio/**  
 *(Replace with your deployed link)*
 
 ---
